@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <section class="articles" style="width: 600px;">
+        {% for art in xxx %}
+            <article>
+                <h1> {{article.title }}</h1>
+                <div class="content">
+                    <img src="http://placehold.it/450x270" alt="">
+                    <h3>prix acctuel : xxx</h3>
+                    <h3>prix precedant : xxx</h3>
+                    <h3>description </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim magni exercitationem, fugiat, optio id sapiente impedit laudantium,
+                        architecto labore asperiores itaque culpa temporibus facere aperiam
+                        doloribus? Aspernatur molestiae soluta possimus ea dignissimos, 
+                        est blanditiis expedita error repellat, cupiditate, 
+                        voluptas cumque architecto illum reiciendis suscipit quasi!
+                        Id aspernatur nemo et. Dolore.</p>
+                        <a href="{{ path('show') }}" class="btn btn-info">decription detaillée</a>        
+                        <a href="" class="btn btn-success">commander</a> 
+                </div>
+            </article>
+        {% endfor %}    
+    </section>
+
+{% endblock body %}
